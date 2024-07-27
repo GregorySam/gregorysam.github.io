@@ -1,0 +1,83 @@
+/* /Layout/MainLayout.razor.rz.scp.css */
+
+
+h2[b-4l7bbuskn7]{
+  color:#000;
+  text-align:center;
+  font-size:2em;
+}
+.warpper[b-4l7bbuskn7]{
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+}
+.tab[b-4l7bbuskn7]{
+  cursor: pointer;
+  padding:10px 20px;
+  margin:0px 2px;
+  background:#000;
+  display:inline-block;
+  color:#fff;
+  border-radius:3px 3px 0px 0px;
+  box-shadow: 0 0.5rem 0.8rem #00000038;
+}
+.panels[b-4l7bbuskn7]{
+  background:#fffffff6;
+  box-shadow: 0 1rem 1rem #00000038;
+  width:100%;
+  max-width:500px;
+  border-radius:3px;
+  overflow:hidden;
+  padding:20px;  
+}
+.panel[b-4l7bbuskn7]{
+  display:none;
+  animation: fadein-b-4l7bbuskn7 .8s;
+}
+@keyframes fadein-b-4l7bbuskn7 {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+.panel-title[b-4l7bbuskn7]{
+  font-size:1.5em;
+  font-weight:bold
+}
+.radio[b-4l7bbuskn7]{
+  display:none;
+}
+#one:checked ~ .panels #one-panel[b-4l7bbuskn7],
+#two:checked ~ .panels #two-panel[b-4l7bbuskn7],
+#three:checked ~ .panels #three-panel[b-4l7bbuskn7]{
+  display:block
+}
+#one:checked ~ .tabs #one-tab[b-4l7bbuskn7],
+#two:checked ~ .tabs #two-tab[b-4l7bbuskn7],
+#three:checked ~ .tabs #three-tab[b-4l7bbuskn7]{
+  background:#fffffff6;
+  color:#000;
+  border-top: 3px solid #000;
+}
+
+
+#blazor-error-ui[b-4l7bbuskn7] {
+    background: lightyellow;
+    bottom: 0;
+    box-shadow: 0 -1px 2px rgba(0, 0, 0, 0.2);
+    display: none;
+    left: 0;
+    padding: 0.6rem 1.25rem 0.7rem 1.25rem;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+    #blazor-error-ui .dismiss[b-4l7bbuskn7] {
+        cursor: pointer;
+        position: absolute;
+        right: 0.75rem;
+        top: 0.5rem;
+    }
